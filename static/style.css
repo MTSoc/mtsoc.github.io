@@ -1,0 +1,278 @@
+/* SETUP */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: system-ui;
+    scroll-behavior: smooth; /* For scroll anchor links */
+    text-align: center;
+
+    /* Stops weird font size resizing on mobile */
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+
+    /* CONSTANTS */
+    --accent: #1B49a9;
+    --secondary: #8A8A8E;
+    --navbar_height: 60px;
+    --content_width: 800px;
+    --wide_content_width: 1200px;
+    --animation_duration: 0.35s;
+}
+p, h1, h2, h3, h4, a, button, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* FONTS */
+p {
+    font-family: Lora;
+    font-size: 1.05rem;
+    line-height: 1.75rem;
+}
+h1, h2, h3, h4, a, button, .light {
+    text-transform: uppercase;
+    font-family: Montserrat;
+}
+.light {
+    font-weight: lighter;
+}
+.secondary {
+    color: var(--secondary);
+}
+
+/* IMAGES */
+.social_logo, .invert, .symbol {
+    filter: invert(1); /* Convert black symbols to white */
+}
+.social_logo {
+    width: 20px;
+    height: 20px;
+}
+.symbol {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+/* BUTTONS */
+button, a {
+    /* Remove default browser appearance */
+    font-size: 1rem;
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: white;
+}
+@media (hover: hover) {
+    button:hover, a:hover {
+        opacity: 0.8; /* Slightly see-through on click */
+    }
+}
+.large_button {
+    font-size: 1.2rem;
+    padding: 10px 20px; /* Vertical Horizontal */
+    border-radius: 100px; /* A large number to give capsule corners */
+    background-color: var(--accent);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    width: fit-content;
+}
+
+/* BACKGROUND IMAGES */
+#contact, #shows {
+    background-color: rgba(0, 0, 0, 0.5); /* Darken background images slightly */
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+#contact {
+    background-image: url(/static/images/banners/contact.jpeg);
+}
+#shows {
+    background-image: url(/static/images/shows/revue_2017_step_into_the_bad_side.jpeg);
+}
+
+/* CONTENT */
+/* An padded piece of content */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 50px; /* Ensures does not scroll behind navbar */
+    background-color: white;
+}
+/* The content of a section */
+.section_content {
+    max-width: var(--content_width);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: calc(env(safe-area-inset-left) + 20px);
+    margin-right: calc(env(safe-area-inset-right) + 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+/* A grid of content */
+.content_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+/* A row of content */
+.content_row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/* A piece content eg. a show/committee member */
+.content_item {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* NAVIGATION */
+#nav {
+    background-color: var(--accent);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: var(--navbar_height);
+    z-index: 1;
+}
+#nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: var(--wide_content_width);
+}
+#nav_links {
+    position: absolute;
+    background-color: var(--accent);
+}
+.nav_button {
+    padding: 0 20px;
+    height: var(--navbar_height);
+    line-height: var(--navbar_height);
+}
+/* Wide nav bar */
+@media (min-width: 850px) {
+    #nav_links {
+        flex-direction: row;
+        top: 0px;
+    }
+    #nav_menu {
+        display: none;
+    }
+}
+/* Compact nav bar */
+@media (max-width: 850px) {
+    #nav_links {
+        width: 100%;
+        flex-direction: column;
+        top: 60px;
+    }
+    #nav_menu {
+        display: block;
+    }
+    .hidden {
+        display: none;
+    }
+}
+
+/* INTRO */
+#intro {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    max-height: 100vh;
+    padding-top: var(--navbar_height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#player {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: block;
+}
+#player_cover {
+    position: absolute;
+    top: var(--navbar_height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 1s;
+}
+#logo {
+    position: absolute;
+    transition: opacity 1s;
+    width: min(50vh, 50vw);
+    height: min(50vh, 50vw);
+}
+#down_button {
+    position: absolute;
+    bottom: 0px;
+    transition: opacity var(--animation_duration);
+}
+/* Hide down button when users can already see the rest of the page */
+@media (max-aspect-ratio: 16/10) {
+    #down_button {
+        opacity: 0;
+    }
+}
+#down_button_img {
+    margin: 50px;
+    margin-bottom: 0;
+    width: calc(20px + 3vh);
+    height: calc(20px + 3vh);
+}
+
+/* SHOWS */
+#past_shows {
+    background-color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.show {
+    padding: 20px;
+    background-color: white;
+    max-width: 500px;
+    flex: 1 1 400px;
+}
+.show_img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* COMMITTEE */
+.headshot {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
