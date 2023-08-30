@@ -92,10 +92,10 @@ button, a {
     color: white;
 }
 #contact {
-    background-image: url(/images/banners/contact.jpeg);
+    background-image: url(images/banners/contact.jpeg);
 }
 #shows {
-    background-image: url(/images/shows/revue_2017_step_into_the_bad_side.jpeg);
+    background-image: url(images/shows/revue_2017_step_into_the_bad_side.jpeg);
 }
 
 /* CONTENT */
