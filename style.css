@@ -98,7 +98,7 @@ button, a {
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-margin-top: 50px; /* Ensures does not scroll behind navbar */
+    scroll-margin-top: var(--navbar_height); /* Ensures does not scroll behind navbar */
     background-color: white;
 }
 /* The content of a section */
