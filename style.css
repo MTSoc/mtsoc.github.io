@@ -99,7 +99,7 @@ button, a {
 }
 
 /* CONTENT */
-/* An padded piece of content */
+/* A padded piece of content */
 .section {
     display: flex;
     justify-content: center;
@@ -249,25 +249,28 @@ button, a {
 
 /* SHOWS */
 #past_shows {
-    background-color: lightgrey;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 30px;
+    padding: 0px 30px;
     justify-content: space-evenly;
     align-items: center;
 }
 .show {
     padding: 20px;
     background-color: white;
+    box-shadow: 0px 5px 10px #bbbbbb;
     max-width: 500px;
     flex: 1 1 400px;
+    border-radius: 20px;
 }
 .show_img {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 /* COMMITTEE */
@@ -275,4 +278,20 @@ button, a {
     width: 250px;
     height: 250px;
     border-radius: 50%;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .section {
+        color: white;
+        background-color: black;
+    }
+    .show {
+        color: white;
+        background-color: #222222;
+        box-shadow: none
+    }
+    #past_shows {
+        background-color: black;
+    }
 }
