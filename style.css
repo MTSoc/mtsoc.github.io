@@ -83,19 +83,13 @@ button, a {
 }
 
 /* BACKGROUND IMAGES */
-#contact, #shows {
+#contact, #shows, #intro {
     background-color: rgba(0, 0, 0, 0.5); /* Darken background images slightly */
     background-blend-mode: multiply;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-}
-#contact {
-    background-image: url(images/banners/contact.jpeg);
-}
-#shows {
-    background-image: url(images/shows/revue_2017_step_into_the_bad_side.jpeg);
 }
 
 /* CONTENT */
@@ -157,11 +151,14 @@ button, a {
     z-index: 1;
 }
 #nav_bar {
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: var(--wide_content_width);
+    height: var(--navbar_height);
+    background-color: var(--accent);
 }
 #nav_links {
     position: absolute;
@@ -175,6 +172,7 @@ button, a {
 /* Wide nav bar */
 @media (min-width: 850px) {
     #nav_links {
+        z-index: 1;
         flex-direction: row;
         top: 0px;
     }
@@ -185,16 +183,20 @@ button, a {
 /* Compact nav bar */
 @media (max-width: 850px) {
     #nav_links {
+        z-index: 0;
         width: 100%;
         flex-direction: column;
+        top: calc(-3 * var(--navbar_height));
+    }
+    #nav_links.selected {
         top: 60px;
     }
     #nav_menu {
         display: block;
     }
-    .hidden {
-        display: none;
-    }
+}
+.transition {
+    transition: all var(--animation_duration);
 }
 
 /* INTRO */
@@ -213,6 +215,8 @@ button, a {
     height: 100%;
     pointer-events: none;
     display: block;
+    transition: opacity 1s;
+    opacity: 0;
 }
 #player_cover {
     position: absolute;
