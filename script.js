@@ -8,7 +8,12 @@ let down_button = document.getElementById('down_button')
 let mute_img = document.getElementById('mute_img')
 let unmute_img = document.getElementById('unmute_img')
 
-// Functions
+// YouTube Player
+let script = document.createElement('script')
+script.src = 'https://www.youtube.com/iframe_api'
+let head = document.getElementsByTagName('head')[0]
+head.appendChild(script)
+
 let player;
 function onYouTubePlayerAPIReady() {
     player = new YT.Player('player', {
@@ -55,6 +60,7 @@ function on_player_state_change(event) {
     }
 }
 
+// Functions
 function toggle_mute() {
     if (player) {
         if (player.isMuted()) {
