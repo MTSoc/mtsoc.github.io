@@ -3,16 +3,6 @@
     box-sizing: border-box;
 }
 html {
-    font-family: system-ui;
-    scroll-behavior: smooth; /* For scroll anchor links */
-    text-align: center;
-
-    /* Stops weird font size resizing on mobile */
-    text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-
     /* CONSTANTS */
     --accent: #1B49a9;
     --secondary: #8A8A8E;
@@ -20,6 +10,20 @@ html {
     --content_width: 800px;
     --wide_content_width: 1200px;
     --animation_duration: 0.35s;
+    
+    font-family: system-ui;
+    scroll-behavior: smooth; /* For scroll anchor links */
+    text-align: center;
+    background-color: var(--accent);
+
+    /* Stops weird font size resizing on mobile */
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    background-color: var(--accent);
 }
 p, h1, h2, h3, h4, a, button, body {
     margin: 0px;
@@ -186,7 +190,7 @@ button, a {
         z-index: 0;
         width: 100%;
         flex-direction: column;
-        top: calc(-3 * var(--navbar_height));
+        top: calc(-4 * var(--navbar_height));
     }
     #nav_links.selected {
         top: 60px;

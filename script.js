@@ -9,17 +9,11 @@ let mute_img = document.getElementById('mute_img')
 let unmute_img = document.getElementById('unmute_img')
 
 // YouTube Player
-let script = document.createElement('script')
-script.src = 'https://www.youtube.com/iframe_api'
-let head = document.getElementsByTagName('head')[0]
-head.appendChild(script)
-
 let player;
 function onYouTubePlayerAPIReady() {
     player = new YT.Player('player', {
         videoId: 'KoUbSExui7g',
         playerVars: {
-            autoplay: 1,
             controls: 0
         },
         events: {
