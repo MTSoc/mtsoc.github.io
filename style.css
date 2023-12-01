@@ -167,10 +167,10 @@ button, a {
 }
 
 /* FOOTER */
-#copyright_notice {
+#footer_text {
     flex: 5;
 }
-#college_logo_link {
+.footer_logo {
     flex: 1;
 }
 #footer_row {
@@ -233,7 +233,7 @@ button, a {
     #nav_menu {
         display: block;
     }
-    #copyright_notice {
+    #footer_text {
         order: -1;
         flex-basis: 100%;
     }
