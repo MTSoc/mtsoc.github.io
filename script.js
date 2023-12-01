@@ -4,7 +4,6 @@ let nav_links = document.getElementById('nav_links')
 let nav_menu_img = document.getElementById('nav_menu_img')
 let intro = document.getElementById('intro')
 let player_cover = document.getElementById('player_cover')
-let down_button = document.getElementById('down_button')
 let mute_img = document.getElementById('mute_img')
 let unmute_img = document.getElementById('unmute_img')
 
