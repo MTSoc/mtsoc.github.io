@@ -234,8 +234,10 @@ button, a {
         display: block;
     }
     #footer_text {
-        order: -1;
         flex-basis: 100%;
+    }
+    .footer_logo {
+        order: 1;
     }
 }
 .transition {
