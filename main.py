@@ -8,12 +8,4 @@ app = Flask(__name__, static_folder='', template_folder='')
 def root():
     return render_template('index.html')
 
-@app.route('/shop')
-def shop():
-    return render_template('shop.html')
-
-@app.route('/tickets')
-def tickets():
-    return render_template('tickets.html')
-
 app.run(host='0.0.0.0')

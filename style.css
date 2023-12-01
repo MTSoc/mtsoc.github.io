@@ -18,9 +18,9 @@ html {
 
     /* Stops weird font size resizing on mobile */
     text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 body {
     background-color: var(--accent);
@@ -61,6 +61,7 @@ h1, h2, h3, h4, a, button, .light {
     display: block;
 }
 
+
 /* BUTTONS */
 button, a {
     /* Remove default browser appearance */
@@ -83,6 +84,7 @@ button, a {
     display: flex;
     gap: 15px;
     align-items: center;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -94,6 +96,15 @@ button, a {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+}
+#contact {
+    background-image: url(images/banners/contact.jpeg);
+}
+#shows {
+    background-image: url(images/shows/revue_2017_step_into_the_bad_side.jpeg);
+}
+#intro {
+    background-image: url(images/shows/revue_2016_wild_wild_party.jpeg);
 }
 
 /* CONTENT */
@@ -108,14 +119,17 @@ button, a {
 /* The content of a section */
 .section_content {
     max-width: var(--content_width);
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: calc(env(safe-area-inset-left) + 20px);
-    margin-right: calc(env(safe-area-inset-right) + 20px);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: calc(env(safe-area-inset-left) + 20px);
+    padding-right: calc(env(safe-area-inset-right) + 20px);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
+}
+.wide_content {
+    max-width: var(--wide_content_width);
 }
 /* A grid of content */
 .content_grid {
@@ -160,7 +174,6 @@ button, a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: var(--wide_content_width);
     height: var(--navbar_height);
     background-color: var(--accent);
 }
@@ -228,19 +241,26 @@ button, a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     transition: opacity 1s;
 }
-#logo {
+#mtsoc_logo {
     position: absolute;
     transition: opacity 1s;
     width: min(50vh, 50vw);
     height: min(50vh, 50vw);
 }
+#imperial_logo {
+    height: 40px;
+}
+#union_logo {
+    height: 50px;
+}
 #down_button {
     position: absolute;
     bottom: 0px;
-    transition: opacity var(--animation_duration);
+    opacity: 0;
+    transition: opacity 1s;
 }
 /* Hide down button when users can already see the rest of the page */
 @media (max-aspect-ratio: 16/10) {
@@ -266,19 +286,19 @@ button, a {
     align-items: center;
 }
 .show {
-    padding: 20px;
+    padding-bottom: 20px;
     background-color: white;
     box-shadow: 0px 5px 10px #bbbbbb;
     max-width: 500px;
     flex: 1 1 400px;
-    border-radius: 20px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 .show_img {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
-    margin-bottom: 10px;
-    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 /* COMMITTEE */
@@ -301,5 +321,8 @@ button, a {
     }
     #past_shows {
         background-color: black;
+    }
+    .invert_dark {
+        filter: invert(1);
     }
 }

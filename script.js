@@ -1,5 +1,5 @@
 // Setup
-let logo = document.getElementById('logo')
+let mtsoc_logo = document.getElementById('mtsoc_logo')
 let nav_links = document.getElementById('nav_links')
 let nav_menu_img = document.getElementById('nav_menu_img')
 let intro = document.getElementById('intro')
@@ -37,15 +37,16 @@ function on_player_state_change(event) {
         player_element.style.opacity = 1
         // Hide MTSoc logo just before the singing starts in the video
         setTimeout(function() {
-            logo.style.opacity = 0
+            mtsoc_logo.style.opacity = 0
             player_cover.style.opacity = 0
+            down_button.style.opacity = 1
         }, 11_000)
         break
     case YT.PlayerState.ENDED:
         // Hide player
         player_element.style.opacity = 0
         // Show static logo
-        logo.style.opacity = 1
+        mtsoc_logo.style.opacity = 1
         // Scroll down to next section when video finishes
         if (document.body.scrollTop === 0) {          
             scroll_to('about')
