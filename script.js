@@ -39,7 +39,6 @@ function on_player_state_change(event) {
         setTimeout(function() {
             mtsoc_logo.style.opacity = 0
             player_cover.style.opacity = 0
-            down_button.style.opacity = 1
         }, 11_000)
         break
     case YT.PlayerState.ENDED:

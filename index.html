@@ -63,21 +63,20 @@
             <div id="player"></div>
             <div id="player_cover"></div>
             <img aria-hidden="true" id="mtsoc_logo" src="images/logos/mtsoc.png">
-            <button type="button" title="Scroll To About" id="down_button" onclick="scroll_to('about')">
+            <button type="button" aria-hidden="true" id="down_button" onclick="scroll_to('about')">
                 <img aria-hidden="true" id="down_button_img" class="invert" src="images/symbols/chevron.down.png">
             </button>
         </div>
+
+        <!-- FEATURE -->
+        <div id="feature"></div>
 
         <!-- ABOUT -->
         <div id="about" class="section">
             <div class="section_content">
                 <h1>CAN'T HELP TAPPING YOUR FEET WHEN YOU HEAR A BEAT? FAMILIAR WITH HEARING "DON'T BE SO DRAMATIC"? SHOULD YOUR SHOWER BALLADS WIN AWARDS?</h1>
                 <p>Introducing Imperial College Musical Theatre Society (MTSoc), host of spectacular shows since 1956. Whether you're hungry for an opportunity to dazzle in the spotlight, jump into the pit as part of our incredible band or work behind the scenes with costume, make-up and tech, MTSoc invites you to join us and find your niche in one of the most exciting societies Imperial has to offer.</p>
-                <a rel="noopener" class="large_button" href="https://mailman.ic.ac.uk/mailman/listinfo/icu-mtsoc" target="_blank">
-                    <img aria-hidden="true" class="social_logo" src="images/symbols/envelope.png">
-                    Join our mailing list
-                </a>
-                <div class="content_row" style="gap:20px;">
+                <div class="content_row" id="social_row">
                     <a rel="noopener" class="large_button" href="https://www.instagram.com/icmusicaltheatre/" target="_blank">
                         <img aria-hidden="true" class="social_logo" src="images/symbols/instagram.png">
                         Instagram
@@ -89,6 +88,10 @@
                     <a rel="noopener" class="large_button" href="https://www.youtube.com/@icumtsoc" target="_blank">
                         <img aria-hidden="true" class="social_logo" src="images/symbols/youtube.png">
                         YouTube
+                    </a>
+                    <a rel="noopener" class="large_button" href="https://mailman.ic.ac.uk/mailman/listinfo/icu-mtsoc" target="_blank">
+                        <img aria-hidden="true" class="social_logo" src="images/symbols/envelope.png">
+                        Join our mailing list
                     </a>
                 </div>
             </div>
@@ -146,51 +149,51 @@
         <div id="past_shows">
             <div class="show">
                 <img aria-hidden="true"  class="show_img" src="images/shows/spring_2023_addams_family.jpeg">
-                <h4>Addams Family - Spring Show 2023</h4>
+                <h4 class="show_title">Addams Family - Spring Show 2023</h4>
             </div>
             <div class="show">
                 <img aria-hidden="true" class="show_img" src="images/shows/spring_2022_grease.jpeg">
-                <h4>Grease - Spring Show 2022</h4>
+                <h4 class="show_title">Grease - Spring Show 2022</h4>
             </div>
             <div class="show">
                 <img aria-hidden="true" class="show_img" src="images/shows/tour_2022_disneyland.jpeg">
-                <h4>Disneyland Paris - Summer Tour 2022</h4>
+                <h4 class="show_title">Disneyland Paris - Summer Tour 2022</h4>
             </div>
             <div class="show">
                 <img aria-hidden="true" class="show_img" src="images/shows/spring_2018_in_the_heights.jpeg">
-                <h4>In The Heights - Spring Show 2018</h4>
+                <h4 class="show_title">In The Heights - Spring Show 2018</h4>
             </div>
             <div class="show">
                 <img aria-hidden="true" class="show_img" src="images/shows/revue_2017_step_into_the_bad_side.jpeg">
-                <h4>Step Into The Bad Side - Revue 2017</h4>
+                <h4 class="show_title">Step Into The Bad Side - Revue 2017</h4>
             </div>
             <div class="show">
                 <img aria-hidden="true" class="show_img" src="images/shows/24_2017_school_of_rock.jpeg">
-                <h4>School of Rock! - 24 Musical 2017</h4>
+                <h4 class="show_title">School of Rock! - 24 Musical 2017</h4>
             </div>
             <div class="show">
                 <img aria-hidden="true" class="show_img" src="images/shows/spring_2017_rent.jpeg">
-                <h4>RENT - Spring Show 2017</h4>
+                <h4 class="show_title">RENT - Spring Show 2017</h4>
             </div>
             <div class="show">
                 <img aria-hidden="true" class="show_img" src="images/shows/revue_2016_wild_wild_party.jpeg">
-                <h4>Wild wild party - Revue 2016</h4>
+                <h4 class="show_title">Wild wild party - Revue 2016</h4>
             </div>
             <div class="show">
                 <img aria-hidden="true" class="show_img" src="images/shows/october_2016_13.jpeg">
-                <h4>13! - October Show 2016</h4>
+                <h4 class="show_title">13! - October Show 2016</h4>
             </div>
             <div class="show">
                 <img aria-hidden="true" class="show_img" src="images/shows/24_2016_rocky_horror.jpeg">
-                <h4>Rocky Horror Show - 24 Musical 2016</h4>
+                <h4 class="show_title">Rocky Horror Show - 24 Musical 2016</h4>
             </div>
             <div class="show">
                 <img aria-hidden="true" class="show_img" src="images/shows/revue_2015_live_in_living_colour.jpeg">
-                <h4>Live in living colour - Revue 2015</h4>
+                <h4 class="show_title">Live in living colour - Revue 2015</h4>
             </div>
             <div class="show">
                 <img aria-hidden="true" class="show_img" src="images/shows/24_2015_billy_elliot.jpeg">
-                <h4>Billy Elliot - 24 Musical 2015</h4>
+                <h4 class="show_title">Billy Elliot - 24 Musical 2015</h4>
             </div>
         </div>
 
@@ -298,13 +301,13 @@
 
         <!-- SOCIAL FOOTER -->
         <div class="section">
-            <div class="section_content wide_content" style="padding: 50px 20px; width:100%;">
-                <div class="content_row" style="width:100%; gap: 20px;">
-                    <a title="Imperial College London" rel="noopener" href="https://www.imperial.ac.uk" target="_blank" style="flex: 1;">
+            <div class="section_content wide_content short_section">
+                <div class="content_row" id="footer_row">
+                    <a class="college_logo_link" title="Imperial College London" rel="noopener" href="https://www.imperial.ac.uk" target="_blank">
                         <img aria-hidden="true" class="invert_dark" id="imperial_logo" src="images/logos/imperial.png">
                     </a>
-                    <p style="flex: 5;">Copyright © 2023 Imperial College Union Musical Theatre Society</p>
-                    <a title="Imperial College Union" rel="noopener" href="https://www.imperialcollegeunion.org" target="_blank" style="flex: 1;">
+                    <p id="copyright_notice">Copyright © 2023 Imperial College Union Musical Theatre Society</p>
+                    <a class="college_logo_link" title="Imperial College Union" rel="noopener" href="https://www.imperialcollegeunion.org" target="_blank">
                         <img aria-hidden="true" class="invert_dark" id="union_logo" src="images/logos/union.png">
                     </a>
                 </div>

@@ -61,7 +61,6 @@ h1, h2, h3, h4, a, button, .light {
     display: block;
 }
 
-
 /* BUTTONS */
 button, a {
     /* Remove default browser appearance */
@@ -106,6 +105,13 @@ button, a {
 #intro {
     background-image: url(images/shows/revue_2016_wild_wild_party.jpeg);
 }
+#feature {
+    background-image: url("images/shows/revue_2023_where_i_want_to_be.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    height: calc(min(500px, 100vw));
+}
 
 /* CONTENT */
 /* A padded piece of content */
@@ -131,6 +137,10 @@ button, a {
 .wide_content {
     max-width: var(--wide_content_width);
 }
+.short_section {
+    padding: 50px 20px;
+    width: 100%;
+}
 /* A grid of content */
 .content_grid {
     display: flex;
@@ -153,6 +163,18 @@ button, a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+}
+
+/* FOOTER */
+#copyright_notice {
+    flex: 5;
+}
+#college_logo_link {
+    flex: 1;
+}
+#footer_row {
+    width: 100%;
     gap: 20px;
 }
 
@@ -211,12 +233,16 @@ button, a {
     #nav_menu {
         display: block;
     }
+    #copyright_notice {
+        order: -1;
+        flex-basis: 100%;
+    }
 }
 .transition {
     transition: all var(--animation_duration);
 }
 
-/* INTRO */
+/* PLAYER */
 #intro {
     position: relative;
     width: 100%;
@@ -259,8 +285,7 @@ button, a {
 #down_button {
     position: absolute;
     bottom: 0px;
-    opacity: 0;
-    transition: opacity 1s;
+    transition: opacity var(--animation_duration);
 }
 /* Hide down button when users can already see the rest of the page */
 @media (max-aspect-ratio: 16/10) {
@@ -275,6 +300,11 @@ button, a {
     height: calc(20px + 3vh);
 }
 
+/* ABOUT */
+#social_row {
+    gap: 20px;
+}
+
 /* SHOWS */
 #past_shows {
     background-color: white;
@@ -286,7 +316,6 @@ button, a {
     align-items: center;
 }
 .show {
-    padding-bottom: 20px;
     background-color: white;
     box-shadow: 0px 5px 10px #bbbbbb;
     max-width: 500px;
@@ -298,7 +327,9 @@ button, a {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
-    margin-bottom: 15px;
+}
+.show_title {
+    margin: 15px 0;
 }
 
 /* COMMITTEE */
