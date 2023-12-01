@@ -1,19 +1,9 @@
-// Setup
-let mtsoc_logo = document.getElementById('mtsoc_logo')
-let nav_links = document.getElementById('nav_links')
-let nav_menu_img = document.getElementById('nav_menu_img')
-let intro = document.getElementById('intro')
-let player_cover = document.getElementById('player_cover')
-let mute_img = document.getElementById('mute_img')
-let unmute_img = document.getElementById('unmute_img')
-
-// YouTube Player
-let player;
+// Called automatically by the player_api script tag in index.html
 function onYouTubePlayerAPIReady() {
-    player = new YT.Player('player', {
+    youtube = new YT.Player('player', {
         videoId: 'KoUbSExui7g',
         playerVars: {
-            controls: 0
+            controls: 0 // Hide all controls
         },
         events: {
             onReady: on_player_ready,
@@ -22,19 +12,19 @@ function onYouTubePlayerAPIReady() {
     })
 }
 
-function on_player_ready(event) {
-    player.mute()
-    player.playVideo()
+// Called when the player is ready to start
+function on_player_ready() {
+    youtube.mute()
+    youtube.playVideo()
 }
 
-function on_player_state_change(event) {  
-    let player_element = document.getElementById('player') 
-    console.log(event.data)
-    switch (event.data) {
+// Called when the player state changes
+function on_player_state_change(state) {
+    switch (state.data) {
     case YT.PlayerState.PLAYING:
-        // Show player
-        player_element.style.opacity = 1
-        // Hide MTSoc logo just before the singing starts in the video
+        // Show the player
+        player.style.opacity = 1
+        // Hide the MTSoc logo just before the singing starts in the video
         setTimeout(function() {
             mtsoc_logo.style.opacity = 0
             player_cover.style.opacity = 0
@@ -42,10 +32,10 @@ function on_player_state_change(event) {
         break
     case YT.PlayerState.ENDED:
         // Hide player
-        player_element.style.opacity = 0
+        player.style.opacity = 0
         // Show static logo
         mtsoc_logo.style.opacity = 1
-        // Scroll down to next section when video finishes
+        // Scroll down to the About section when the video finishes
         if (document.body.scrollTop === 0) {          
             scroll_to('about')
         }
@@ -53,44 +43,38 @@ function on_player_state_change(event) {
     }
 }
 
-// Functions
+// Toggle sound on the player
 function toggle_mute() {
-    if (player) {
-        if (player.isMuted()) {
-            player.unMute()
+    if (youtube) {
+        if (youtube.isMuted()) {
+            youtube.unMute()
             mute_button_img.src = '/images/symbols/speaker.wave.3.fill.png'
         } else {
-            player.mute()
+            youtube.mute()
             mute_button_img.src = '/images/symbols/speaker.slash.fill.png'
         }
     }
 }
 
-function update_nav_menu_img() {
-    if (nav_links.classList.contains('selected')) {
-        nav_menu_img.src = '/images/symbols/xmark.png'
-    } else {
-        nav_menu_img.src = '/images/symbols/line.3.horizontal.png'
-    }
-}
-
+// Toggle showing the navigation links in compact width
 function toggle_nav_links() {
     nav_links.classList.add('transition')
     nav_links.classList.toggle('selected')
-    update_nav_menu_img()
+    nav_menu_img.src = nav_links.classList.contains('selected') ? '/images/symbols/xmark.png' : '/images/symbols/line.3.horizontal.png'
+
+    // Stop animating the navigation links
     setTimeout(function() {
         nav_links.classList.remove('transition')
     }, 350)
 }
 
+// Scroll to the given content section
 function scroll_to(anchor) {
     let element = document.getElementById(anchor)
     element.scrollIntoView()
 
-    nav_links.classList.add('transition')
-    nav_links.classList.add('selected')
-    toggle_nav_links()
+    // Hide the navigation links where necessary
+    if (nav_links.classList.contains('selected')) {
+        toggle_nav_links()
+    }
 }
-
-// On load
-update_nav_menu_img()
