@@ -1,4 +1,4 @@
-# ICU MTSoc Website
+# MTSoc Website
 
 This repository contains all the code for the Imperial College Union Musical Theatre Society website: [mtsoc.co.uk](mtsoc.co.uk).
 
