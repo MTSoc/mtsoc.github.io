@@ -1,20 +1,19 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>ICU MTSoc</title>
-        <meta name="description" content="Imperial College Union Musical Theatre Society">
+        <title>MTSoc | Imperial College Union Musical Theatre Society</title>
         
-		<link rel="icon" href="images/logos/mtsoc.jpeg">
-		<link rel="apple-touch-icon" href="images/logos/mtsoc.jpeg">
+		<link rel="icon" href="static/images/logos/mtsoc.jpeg">
+		<link rel="apple-touch-icon" href="static/images/logos/mtsoc.jpeg">
         <meta name="viewport" content="width=device-width, viewport-fit=cover">
-        <meta property="og:image" content="images/shows/revue_2016_wild_wild_party.jpeg">
+        <meta property="og:image" content="static/images/shows/revue_2016_wild_wild_party.jpeg">
         
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400italic">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="static/style.css">
         
         <script src="https://www.youtube.com/player_api"></script>
-        <script defer src="script.js"></script>
+        <script defer src="static/script.js"></script>
 
         <!-- GOOGLE ANALYTICS -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-J4T1FC6CR2"></script>
@@ -28,15 +27,15 @@
     <body>
         <!-- NAVIGATION -->
         <div id="nav">
-            <div id="nav_bar" class="wide_content">
+            <div id="navbar" class="regular_content">
                 <button type="button" title="Toggle Navigation Links" id="nav_menu" class="nav_button" onclick="toggle_nav_links()">
-                    <img aria-hidden="true" id="nav_menu_img" class="symbol" src="/images/symbols/line.3.horizontal.png">
+                    <img id="nav_menu_img" class="nav_img" src="/static/images/symbols/line.3.horizontal.png" aria-hidden="true">
                 </button>
                 <button type="button" class="nav_button" onclick="scroll_to('intro')">
                     <h3><span class="light">ICU</span> MTSOC</h3>
                 </button>
                 <button type="button" title="Toggle Video Sound" class="nav_button" onclick="toggle_mute()">
-                    <img aria-hidden="true" class="symbol" id="mute_button_img" src="/images/symbols/speaker.slash.fill.png">
+                    <img id="mute_button_img" class="nav_img" src="/static/images/symbols/speaker.slash.fill.png" aria-hidden="true">
                 </button>
             </div>
             <span id="nav_links" class="content_row">
@@ -59,42 +58,44 @@
         </div>
 
         <!-- PLAYER -->
-        <div id="intro">
+        <div id="intro" class="background_section">
             <div id="player"></div>
             <div id="player_cover"></div>
-            <img aria-hidden="true" id="mtsoc_logo" src="images/logos/mtsoc.png">
-            <button type="button" aria-hidden="true" id="down_button" onclick="scroll_to('about')">
-                <img aria-hidden="true" id="down_button_img" class="invert" src="images/symbols/chevron.down.png">
+            <img id="player_logo" src="static/images/logos/mtsoc.png" aria-hidden="true">
+            <button type="button" id="down_button" onclick="scroll_to('about')" aria-hidden="true">
+                <img id="down_button_img" class="invert" src="static/images/symbols/chevron.down.png" aria-hidden="true">
             </button>
         </div>
 
         <!-- FEATURE -->
+        <!-- Uncomment the line below to show a feature image -->
+        <!-- This can be used to advertise upcoming shows & events -->
         <!-- <div id="feature"></div> -->
 
         <!-- ABOUT -->
-        <div id="about" class="section">
-            <div class="section_content">
+        <div id="about" class="section plain_section">
+            <div class="section_column narrow_content">
                 <h1>CAN'T HELP TAPPING YOUR FEET WHEN YOU HEAR A BEAT? FAMILIAR WITH HEARING "DON'T BE SO DRAMATIC"? SHOULD YOUR SHOWER BALLADS WIN AWARDS?</h1>
                 <p>Introducing Imperial College Musical Theatre Society (MTSoc), host of spectacular shows since 1956. Whether you're hungry for an opportunity to dazzle in the spotlight, jump into the pit as part of our incredible band or work behind the scenes with costume, make-up and tech, MTSoc invites you to join us and find your niche in one of the most exciting societies Imperial has to offer.</p>
-                <div class="content_row" id="social_row">
-                    <a rel="noopener" class="large_button" href="https://www.instagram.com/icmusicaltheatre/" target="_blank">
-                        <img aria-hidden="true" class="social_logo" src="images/symbols/instagram.png">
+                <div class="content_row">
+                    <a class="large_button" href="https://www.instagram.com/icmusicaltheatre/" target="_blank" rel="noopener">
+                        <img class="icon" src="static/images/symbols/instagram.png" aria-hidden="true">
                         Instagram
                     </a>
-                    <a rel="noopener" class="large_button" href="https://www.facebook.com/mtsoc/" target="_blank">
-                        <img aria-hidden="true" class="social_logo" src="images/symbols/facebook.png">
+                    <a class="large_button" href="https://www.facebook.com/mtsoc/" target="_blank" rel="noopener">
+                        <img class="icon" src="static/images/symbols/facebook.png" aria-hidden="true">
                         Facebook
                     </a>
-                    <a rel="noopener" class="large_button" href="https://www.youtube.com/@icumtsoc" target="_blank">
-                        <img aria-hidden="true" class="social_logo" src="images/symbols/youtube.png">
+                    <a class="large_button" href="https://www.youtube.com/@icumtsoc" target="_blank" rel="noopener">
+                        <img class="icon" src="static/images/symbols/youtube.png" aria-hidden="true">
                         YouTube
                     </a>
-                    <a rel="noopener" class="large_button" href="https://tiktok.com/@icmusicaltheatre" target="_blank">
-                        <img aria-hidden="true" class="social_logo" src="images/symbols/tiktok.png">
+                    <a class="large_button" href="https://tiktok.com/@icmusicaltheatre" target="_blank" rel="noopener">
+                        <img class="icon" src="static/images/symbols/tiktok.png" aria-hidden="true">
                         TikTok
                     </a>
-                    <a rel="noopener" class="large_button" href="https://mailman.ic.ac.uk/mailman/listinfo/icu-mtsoc" target="_blank">
-                        <img aria-hidden="true" class="social_logo" src="images/symbols/envelope.png">
+                    <a class="large_button" href="https://mailman.ic.ac.uk/mailman/listinfo/icu-mtsoc" target="_blank" rel="noopener">
+                        <img class="icon" src="static/images/symbols/envelope.png" aria-hidden="true">
                         Join our mailing list
                     </a>
                 </div>
@@ -102,26 +103,26 @@
         </div>
 
         <!-- SHOWS -->
-        <div id="shows" class="section">
-            <div class="section_content">
+        <div id="shows" class="section background_section">
+            <div class="section_column narrow_content">
                 <h1>Shows</h1>
                 <p>With an ever expanding number of shows, including the full scale Spring Show, 24 hour musicals and Showcases, alongside great socials, MTSoc is a great way to get involved in something different. Previous shows include <i>Footloose</i>, <i>Legally Blonde</i>, <i>In The Heights</i>, <i>RENT</i>, <i>Sweeney Todd</i> and <i>The Rocky Horror Show</i>. Below you can find a description of all our annual shows.</p>
-                <a rel="noopener" class="large_button" href="https://www.facebook.com/mtsoc/events" target="_blank">
-                    <img aria-hidden="true" class="social_logo" src="images/symbols/facebook.png">
+                <a class="large_button" href="https://www.facebook.com/mtsoc/events" target="_blank" rel="noopener">
+                    <img class="icon" src="static/images/symbols/facebook.png" aria-hidden="true">
                     Upcoming shows
                 </a>
             </div>
         </div>
 
         <!-- SHOW EXPLANATIONS -->
-        <div class="section">
-            <div class="section_content wide_content">
+        <div class="section plain_section">
+            <div class="section_column regular_content">
                 <div class="content_grid">
                     <div class="content_item">
                         <h2>Freshers Revue</h2>
                         <p>The cabaret-style Revue show is MTSoc's first production of the year and is designed to welcome newcomers into the society and give everyone a taste of what the MTSoc is about. In addition to the show, which runs towards the end of autumn term, you can expect a variety of social events throughout the year including discounted West End trips, Rockaoke and MTSoc Sports Day. Click below to watch more.</p>
-                        <a rel="noopener" class="large_button" href="https://www.youtube.com/watch?v=tfJRwp0K1GE&list=PLu_WDfQrrNerhoTLVaVxamHTzzNNJZx0G" target="_blank">
-                            <img aria-hidden="true" class="social_logo" src="images/symbols/youtube.png">
+                        <a class="large_button" href="https://www.youtube.com/watch?v=tfJRwp0K1GE&list=PLu_WDfQrrNerhoTLVaVxamHTzzNNJZx0G" target="_blank" rel="noopener">
+                            <img class="icon" src="static/images/symbols/youtube.png" aria-hidden="true">
                             Revue 2023
                         </a>
                     </div>
@@ -150,171 +151,63 @@
         </div>
 
         <!-- PAST SHOWS -->
-        <div id="past_shows">
-            <div class="show">
-                <img aria-hidden="true"  class="show_img" src="images/shows/spring_2023_addams_family.jpeg">
-                <h4 class="show_title">Addams Family - Spring Show 2023</h4>
-            </div>
-            <div class="show">
-                <img aria-hidden="true" class="show_img" src="images/shows/spring_2022_grease.jpeg">
-                <h4 class="show_title">Grease - Spring Show 2022</h4>
-            </div>
-            <div class="show">
-                <img aria-hidden="true" class="show_img" src="images/shows/tour_2022_disneyland.jpeg">
-                <h4 class="show_title">Disneyland Paris - Summer Tour 2022</h4>
-            </div>
-            <div class="show">
-                <img aria-hidden="true" class="show_img" src="images/shows/spring_2018_in_the_heights.jpeg">
-                <h4 class="show_title">In The Heights - Spring Show 2018</h4>
-            </div>
-            <div class="show">
-                <img aria-hidden="true" class="show_img" src="images/shows/revue_2017_step_into_the_bad_side.jpeg">
-                <h4 class="show_title">Step Into The Bad Side - Revue 2017</h4>
-            </div>
-            <div class="show">
-                <img aria-hidden="true" class="show_img" src="images/shows/24_2017_school_of_rock.jpeg">
-                <h4 class="show_title">School of Rock! - 24 Musical 2017</h4>
-            </div>
-            <div class="show">
-                <img aria-hidden="true" class="show_img" src="images/shows/spring_2017_rent.jpeg">
-                <h4 class="show_title">RENT - Spring Show 2017</h4>
-            </div>
-            <div class="show">
-                <img aria-hidden="true" class="show_img" src="images/shows/revue_2016_wild_wild_party.jpeg">
-                <h4 class="show_title">Wild wild party - Revue 2016</h4>
-            </div>
-            <div class="show">
-                <img aria-hidden="true" class="show_img" src="images/shows/october_2016_13.jpeg">
-                <h4 class="show_title">13! - October Show 2016</h4>
-            </div>
-            <div class="show">
-                <img aria-hidden="true" class="show_img" src="images/shows/24_2016_rocky_horror.jpeg">
-                <h4 class="show_title">Rocky Horror Show - 24 Musical 2016</h4>
-            </div>
-            <div class="show">
-                <img aria-hidden="true" class="show_img" src="images/shows/revue_2015_live_in_living_colour.jpeg">
-                <h4 class="show_title">Live in living colour - Revue 2015</h4>
-            </div>
-            <div class="show">
-                <img aria-hidden="true" class="show_img" src="images/shows/24_2015_billy_elliot.jpeg">
-                <h4 class="show_title">Billy Elliot - 24 Musical 2015</h4>
-            </div>
-        </div>
+        <div id="past_shows" class="plain_section"></div>
 
         <!-- COMMITTEE -->
-        <div id="committee" class="section">
-            <div class="section_content wide_content">
+        <div id="committee" class="section plain_section">
+            <div class="section_column regular_content">
                 <h1>Committee</h1>
-                <div class="content_grid">
-                    <div class="content_item">
-                        <img aria-hidden="true" class="headshot" src="images/committee/jaz.jpeg">
-                        <div>
-                            <h2>Jasmine<br>Ajaz</h2>
-                            <p class="light">(she/her)</p>
-                            <p class="light secondary">President</p>
-                        </div>
-                        <p>Jaz had a spectacular first year because of MTSoc. Jaz had possibly an even more spectacular second year because of MTSoc. Now, in her third year, she hopes that MTSoc can continue making things spectacular for all, and can't wait to spend even more time with her fav community ❤</p>
-                    </div>
-                    <div class="content_item">
-                        <img aria-hidden="true" class="headshot" src="images/committee/nathalie.jpeg">
-                        <div>
-                            <h2>Nathalie<br>Tedfors Lindell</h2>
-                            <p class="light">(she/her)</p>
-                            <p class="light secondary">Vice president</p>
-                        </div>
-                        <p>Nathalie is on the MTSoc committee for her third year in a row - this time to be the resident Old Person and Advice Giver. She also has a side hustle as an MRes student; a programme she applied to for entirely academic reasons and not just because she wasn't ready to say goodbye to the society yet, pinky promise.</p>
-                    </div>
-                    <div class="content_item">
-                        <img aria-hidden="true" class="headshot" src="images/committee/reuben.jpeg">
-                        <div>
-                            <h2>Reuben<br>Gilson-Barnett</h2>
-                            <p class="light">(he/him)</p>
-                            <p class="light secondary">Treasurer</p>
-                        </div>
-                        <p>Reuben has spent his 2 years at Imperial in his overdraft. Naturally, he thought running for treasurer would be a good idea.</p>
-                    </div>
-                    <div class="content_item">
-                        <img aria-hidden="true" class="headshot" src="images/committee/naya.jpeg">
-                        <div>
-                            <h2>Aanaya<br>Miah</h2>
-                            <p class="light">(she/her)</p>
-                            <p class="light secondary">Secretary</p>
-                        </div>
-                        <p>Naya is a 2nd year Biochem student ready to lay down her life just to write the perfect email. Every colour coded heading, every hyperlink, every GIF. You noticed it? Exactly what she wanted. Naya: in your inbox and indulging in her MT hyperfixation.</p>
-                    </div>
-                    <div class="content_item">
-                        <img aria-hidden="true" class="headshot" src="images/committee/harry.jpeg">
-                        <div>
-                            <h2>Harry<br>McCarthy</h2>
-                            <p class="light">(he/they)</p>
-                            <p class="light secondary">Publicity Officer</p>
-                        </div>
-                        <p>Does Harry wish he did a musical theatre degree instead of physics? Yes. Does Harry love his MTSoc family more than his degree? Yes. That's why he is committing to the society even more this academic year - as Publicity Officer!</p>
-                    </div>
-                    <div class="content_item">
-                        <img aria-hidden="true" class="headshot" src="images/committee/jack.jpeg">
-                        <div>
-                            <h2>Jack<br>Finnis</h2>
-                            <p class="light">(he/him)</p>
-                            <p class="light secondary">Webmaster</p>
-                        </div>
-                        <p>Jack has found the perfect way to spend more time with MTSoc this year while also learning for his course, Computer Science: become MTSoc webmaster and general techie! He is a 2nd year undergraduate and is super excited for another year of musicals & more!</p>
-                    </div>
-                    <div class="content_item">
-                        <img aria-hidden="true" class="headshot" src="images/committee/oli.jpeg">
-                        <div>
-                            <h2>Oli<br>Keene</h2>
-                            <p class="light">(they/he/she)</p>
-                            <p class="light secondary">Social secretary</p>
-                        </div>
-                        <p>Oli is thrilled to be back again for another year as an MTSoc social sec! This time around they plan on making zero mistakes. Not even a tiny one. Not ever.</p>
-                    </div>
-                    <div class="content_item">
-                        <img aria-hidden="true" class="headshot" src="images/committee/solen.jpeg">
-                        <div>
-                            <h2>Solen<br>Marqueste</h2>
-                            <p class="light">(she/her)</p>
-                            <p class="light secondary">Social secretary</p>
-                        </div>
-                        <p>Solen is a third year Chemical engineering student and she is really excited to be half of the social secretary team this year. She hopes you'll fall in love with MTSoc as much as she has 😊. She is also very sad that this will be her final year in the most amazing society to ever be created.</p>
-                    </div>
-                    <div class="content_item">
-                        <img aria-hidden="true" class="headshot" src="images/committee/jasmine.jpeg">
-                        <div>
-                            <h2>Jasmine<br>Fung</h2>
-                            <p class="light">(she/her)</p>
-                            <p class="light secondary">Equipment Manager</p>
-                        </div>
-                        <p>Jasmine is a second-year Biochem student who loves all things musical theatre. She's excited about being in more productions, singing more flower songs, and organising the costume cupboard (her "excuse" to not focus on her degree)!</p>
-                    </div>
-                </div>
+                <div id="committee_grid" class="content_grid"></div>
             </div>
         </div>
 
         <!-- CONTACT -->
-        <div id="contact" class="section">
-            <div class="section_content">
+        <div id="contact" class="section background_section">
+            <div class="section_column narrow_content">
                 <h1>Contact</h1>
                 <p>We welcome comments and queries and particularly love hearing from audience members. If you would like to stay informed of what is going on within the society then please join our mailing list.</p>
                 <a class="large_button" href="mailto:musical@ic.ac.uk">
-                    <img aria-hidden="true" class="social_logo" src="images/symbols/envelope.png">
+                    <img class="icon" src="static/images/symbols/envelope.png" aria-hidden="true">
                     musical@ic.ac.uk
                 </a>
             </div>
         </div>
 
-        <!-- SOCIAL FOOTER -->
-        <div class="section">
-            <div class="section_content wide_content short_section">
-                <div class="content_row" id="footer_row">
-                    <a class="footer_logo" title="Imperial College London" rel="noopener" href="https://www.imperial.ac.uk" target="_blank">
-                        <img aria-hidden="true" class="invert_dark" id="imperial_logo" src="images/logos/imperial.png">
+        <!-- FOOTER -->
+        <div id="footer" class="section">
+            <div class="section_column">
+                <div>
+                    <button type="button" onclick="scroll_to('intro')" aria-hidden="true">
+                        <img id="footer_logo" src="static/images/logos/mtsoc.png" aria-hidden="true">
+                    </button>
+                    <p>Est. 1956</p>
+                </div>
+                <div class="content_row">
+                    <a title="Instagram" href="https://www.instagram.com/icmusicaltheatre/" target="_blank" rel="noopener">
+                        <img class="icon" src="static/images/symbols/instagram.png" aria-hidden="true">
                     </a>
-                    <p id="footer_text">Copyright © 2023 Imperial College Union Musical Theatre Society</p>
-                    <a class="footer_logo" title="Imperial College Union" rel="noopener" href="https://www.imperialcollegeunion.org" target="_blank">
-                        <img aria-hidden="true" class="invert_dark" id="union_logo" src="images/logos/union.png">
+                    <a title="Facebook" href="https://www.facebook.com/mtsoc/" target="_blank" rel="noopener">
+                        <img class="icon" src="static/images/symbols/facebook.png" aria-hidden="true">
+                    </a>
+                    <a title="YouTube" href="https://www.youtube.com/@icumtsoc" target="_blank" rel="noopener">
+                        <img class="icon" src="static/images/symbols/youtube.png" aria-hidden="true">
+                    </a>
+                    <a title="TikTok" href="https://tiktok.com/@icmusicaltheatre" target="_blank" rel="noopener">
+                        <img class="icon" src="static/images/symbols/tiktok.png" aria-hidden="true">
                     </a>
                 </div>
+                <div class="content_row">
+                    <a title="Imperial College London" href="https://www.imperial.ac.uk" target="_blank" rel="noopener">
+                        <img id="imperial_logo" class="invert" src="static/images/logos/imperial.png" aria-hidden="true">
+                    </a>
+                    <a title="Imperial College Union" href="https://www.imperialcollegeunion.org" target="_blank" rel="noopener">
+                        <img id="union_logo" class="invert" src="static/images/logos/union.png" aria-hidden="true">
+                    </a>
+                </div>
+                <p id="copyright">
+                    MTSoc is part of Imperial College Union which is a <a href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5033166">UK Registered Charity, Number 1151241</a><br>
+                    Copyright © 2024 Imperial College Union Musical Theatre Society
+                </p>
             </div>
         </div>
     </body>

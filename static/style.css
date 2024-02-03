@@ -1,0 +1,343 @@
+/* COLOURS */
+:root {
+    --accent: #1B49A9;
+    --lighter: rgba(255, 255, 255, 0.1);
+    --darker: rgba(0, 0, 0, 0.2);
+    --secondary: #8A8A8E;
+
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+@media(prefers-color-scheme: light) {
+    :root {
+        --primary: black;
+        --background: white;
+        --plain-background: white;
+    }
+}
+@media(prefers-color-scheme: dark) {
+    :root {
+        --primary: white;
+        --background: black;
+        --plain-background: var(--lighter);
+    }
+}
+
+/* GENERAL */
+:root {
+    --navbar_height: 60px;
+    --nav_buttons_count: 5;
+    --narrow_width: 800px;
+    --regular_width: 1200px;
+    --animation_duration: 0.35s;
+    
+    background-color: var(--accent);
+    scroll-behavior: smooth;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* FONTS */
+p {
+    font-family: Lora;
+    font-size: 1.05rem;
+    line-height: 1.75rem;
+}
+h1, h2, h3, h4, .large_button, .prominent {
+    font-family: Montserrat;
+    text-transform: uppercase;
+}
+
+/* BACKGROUND IMAGES */
+#intro {
+    background-image: url(images/shows/revue_2016_wild_wild_party.jpeg);
+}
+#shows {
+    background-image: url(images/shows/revue_2017_step_into_the_bad_side.jpeg);
+}
+#contact {
+    background-image: url(images/banners/cast2.jpeg);
+}
+#feature {
+    background-image: url("images/shows/revue_2023_where_i_want_to_be.jpeg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    height: calc(min(500px, 100vw));
+}
+
+/* CONTENT */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: var(--navbar_height); /* Ensures does not scroll behind navbar */
+    padding: 100px 20px;
+}
+.background_section {
+    background-color: rgba(0, 0, 0, 0.5); /* Darken background images slightly */
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.plain_section {
+    color: var(--primary);
+    background-color: var(--background)
+}
+.section_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.narrow_content {
+    max-width: var(--narrow_width);
+}
+.regular_content {
+    max-width: var(--regular_width);
+}
+.content_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.content_row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.content_item {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.content_column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+/* IMAGES */
+.invert {
+    filter: invert(1); /* Convert black symbols to white */
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    filter: invert();
+}
+
+/* BUTTONS */
+button, a {
+    /* Remove default browser appearance */
+    font-size: 1rem;
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity var(--animation_duration);
+}
+@media (hover: hover) {
+    button:hover, a:hover {
+        opacity: 0.75;
+    }
+}
+.large_button {
+    font-size: 1.2rem;
+    padding: 10px 20px; /* Vertical Horizontal */
+    border-radius: 100px; /* A large number to give capsule corners */
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: var(--accent);
+    color: white;
+}
+
+/* NAVIGATION */
+#nav {
+    position: fixed;
+    width: 100%;
+    height: var(--navbar_height);
+    background-color: var(--accent);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+#navbar {
+    width: 100%;
+    height: var(--navbar_height);
+    background-color: var(--accent);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav_links {
+    position: absolute;
+    background-color: var(--accent);
+    gap: 0px;
+}
+#nav_links.transition {
+    transition: all var(--animation_duration);
+}
+.nav_img {
+    width: 30px;
+    height: 30px;
+    filter: invert();
+}
+.nav_button {
+    color: white;
+    padding: 0 20px;
+    height: var(--navbar_height);
+    line-height: var(--navbar_height);
+}
+@media (min-width: 900px) {
+    #nav_links {
+        z-index: 1;
+        flex-direction: row;
+        top: 0px;
+    }
+    #nav_menu {
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+    #nav_links {
+        z-index: 0;
+        width: 100%;
+        flex-direction: column;
+        top: calc(var(--navbar_height) * (1 - var(--nav_buttons_count)));
+    }
+    #nav_links.selected {
+        top: var(--navbar_height);
+    }
+    #nav_menu {
+        display: block;
+    }
+}
+
+/* PLAYER */
+#intro {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    max-height: 100vh;
+    padding-top: var(--navbar_height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#player {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: block;
+    transition: opacity 1s;
+    opacity: 0;
+}
+#player_cover {
+    position: absolute;
+    top: var(--navbar_height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: opacity 1s;
+}
+#player_logo {
+    position: absolute;
+    transition: opacity 1s;
+    width: min(50vh, 50vw);
+    height: min(50vh, 50vw);
+}
+#down_button {
+    position: absolute;
+    bottom: 0px;
+    transition: opacity var(--animation_duration);
+}
+/* Hide down button when users can already see the rest of the page */
+@media (max-aspect-ratio: 16/10) {
+    #down_button {
+        opacity: 0;
+    }
+}
+#down_button_img {
+    margin: 50px;
+    margin-bottom: 0;
+    width: calc(20px + 3vh);
+    height: calc(20px + 3vh);
+}
+
+/* SHOWS */
+#past_shows {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.show {
+    background-color: var(--plain-background);
+    box-shadow: 0px 5px 10px var(--darker);
+    max-width: 500px;
+    flex: 1 1 400px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+@media(prefers-color-scheme: dark) {
+    .show {
+        box-shadow: none;
+    }
+}
+.show_img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.show_title {
+    margin: 15px 10px;
+}
+
+/* COMMITTEE */
+.headshot {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.committee_role {
+    color: var(--secondary);
+}
+
+/* FOOTER */
+#footer {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+}
+#copyright {
+    color: var(--secondary);
+}
+#imperial_logo {
+    height: 40px;
+}
+#union_logo {
+    height: 50px;
+}
+#footer_logo {
+    height: 130px;
+}
