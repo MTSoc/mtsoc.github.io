@@ -1,5 +1,17 @@
 [
     {
+        "title": "Where I Want To Be - Revue 2023",
+        "image": "revue_2023_where_i_want_to_be.jpg"
+    },
+    {
+        "title": "The Final Heist - October 2023",
+        "image": "october_2023_the_final_heist.jpg"
+    },
+    {
+        "title": "Gravity Rises - Studio 2023",
+        "image": "studio_2023_gravity_rises.jpg"
+    },
+    {
         "title": "Addams Family - Spring Show 2023",
         "image": "spring_2023_addams_family.jpeg"
     },
@@ -16,10 +28,6 @@
         "image": "spring_2018_in_the_heights.jpeg"
     },
     {
-        "title": "Step Into The Bad Side - Revue 2017",
-        "image": "revue_2017_step_into_the_bad_side.jpeg"
-    },
-    {
         "title": "School of Rock! - 24 Musical 2017",
         "image": "24_2017_school_of_rock.jpeg"
     },
@@ -28,20 +36,12 @@
         "image": "spring_2017_rent.jpeg"
     },
     {
-        "title": "Wild wild party - Revue 2016",
-        "image": "revue_2016_wild_wild_party.jpeg"
-    },
-    {
         "title": "13! - October Show 2016",
         "image": "october_2016_13.jpeg"
     },
     {
         "title": "Rocky Horror Show - 24 Musical 2016",
         "image": "24_2016_rocky_horror.jpeg"
-    },
-    {
-        "title": "Live in living colour - Revue 2015",
-        "image": "revue_2015_live_in_living_colour.jpeg"
     },
     {
         "title": "Billy Elliot - 24 Musical 2015",
