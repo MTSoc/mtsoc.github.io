@@ -24,6 +24,10 @@
         "image": "tour_2022_disneyland.jpeg"
     },
     {
+        "title": "Songs For A New World - Studio 2022",
+        "image": "studio_2022_songs_for_a_new_world.jpeg"
+    },
+    {
         "title": "In The Heights - Spring Show 2018",
         "image": "spring_2018_in_the_heights.jpeg"
     },
@@ -42,9 +46,5 @@
     {
         "title": "Rocky Horror Show - 24 Musical 2016",
         "image": "24_2016_rocky_horror.jpeg"
-    },
-    {
-        "title": "Billy Elliot - 24 Musical 2015",
-        "image": "24_2015_billy_elliot.jpeg"
     }
 ]

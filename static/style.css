@@ -51,6 +51,9 @@ h1, h2, h3, h4, .large_button, .prominent {
     font-family: Montserrat;
     text-transform: uppercase;
 }
+.normal {
+    font-weight: normal;
+}
 
 /* BACKGROUND IMAGES */
 #intro {
@@ -186,6 +189,9 @@ button, a {
     justify-content: space-between;
     align-items: center;
 }
+#navbar_padding {
+    height: var(--navbar_height);
+}
 #nav_links {
     position: absolute;
     background-color: var(--accent);
@@ -235,8 +241,7 @@ button, a {
     position: relative;
     width: 100%;
     aspect-ratio: 16/9;
-    max-height: 100vh;
-    padding-top: var(--navbar_height);
+    max-height: calc(100vh - var(--navbar_height));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,10 +256,8 @@ button, a {
 }
 #player_cover {
     position: absolute;
-    top: var(--navbar_height);
-    left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     transition: opacity 1s;
 }

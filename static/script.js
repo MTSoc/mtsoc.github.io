@@ -1,5 +1,12 @@
+// Load the YouTube Iframe API
+var player_script = document.createElement('script');
+player_script.src = "https://www.youtube.com/iframe_api";
+var first_script = document.getElementsByTagName('script')[0];
+first_script.parentNode.insertBefore(player_script, first_script);
+
 // Called automatically by the player_api script tag in index.html
-function onYouTubePlayerAPIReady() {
+function onYouTubeIframeAPIReady() {
+    console.log('YouTube Iframe API ready')
     youtube = new YT.Player('player', {
         videoId: 'KoUbSExui7g',
         playerVars: {
@@ -14,12 +21,14 @@ function onYouTubePlayerAPIReady() {
 
 // Called when the player is ready to start
 function on_player_ready() {
+    console.log('YouTube player ready')
     youtube.mute()
     youtube.playVideo()
 }
 
 // Called when the player state changes
 function on_player_state_change(state) {
+    console.log('Player state changed to', state.data)
     switch (state.data) {
     case YT.PlayerState.PLAYING:
         // Show the player
