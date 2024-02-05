@@ -78,7 +78,6 @@ h1, h2, h3, h4, .large_button, .prominent {
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-margin-top: var(--navbar_height); /* Ensures does not scroll behind navbar */
     padding: 100px 20px;
 }
 .background_section {
@@ -92,6 +91,9 @@ h1, h2, h3, h4, .large_button, .prominent {
 .plain_section {
     color: var(--primary);
     background-color: var(--background)
+}
+.plain_section, .background_section {
+    scroll-margin-top: var(--navbar_height); /* Ensures does not scroll behind navbar */
 }
 .section_column {
     display: flex;
@@ -227,6 +229,9 @@ button, a {
         width: 100%;
         flex-direction: column;
         top: calc(var(--navbar_height) * (1 - var(--nav_buttons_count)));
+    }
+    #nav_links .nav_button {
+        width: 100%;
     }
     #nav_links.selected {
         top: var(--navbar_height);
