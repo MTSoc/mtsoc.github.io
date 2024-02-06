@@ -12,15 +12,15 @@
         "image": "studio_2023_gravity_rises.jpg"
     },
     {
-        "title": "Addams Family - Spring Show 2023",
+        "title": "Addams Family - Spring 2023",
         "image": "spring_2023_addams_family.jpeg"
     },
     {
-        "title": "Grease - Spring Show 2022",
+        "title": "Grease - Spring 2022",
         "image": "spring_2022_grease.jpeg"
     },
     {
-        "title": "Disneyland Paris - Summer Tour 2022",
+        "title": "Disneyland Paris - Summer 2022",
         "image": "tour_2022_disneyland.jpeg"
     },
     {
@@ -32,19 +32,19 @@
         "image": "revue_2021_come_alive_2.jpeg"
     },
     {
-        "title": "In The Heights - Spring Show 2018",
-        "image": "spring_2018_in_the_heights.jpeg"
-    },
-    {
         "title": "School of Rock! - 24 Musical 2017",
         "image": "24_2017_school_of_rock.jpeg"
     },
     {
-        "title": "RENT - Spring Show 2017",
+        "title": "RENT - Spring 2017",
         "image": "spring_2017_rent.jpeg"
     },
     {
-        "title": "13! - October Show 2016",
+        "title": "13! - October 2016",
         "image": "october_2016_13.jpeg"
+    },
+    {
+        "title": "The Rocky Horror Show - 24 Musical 2016",
+        "image": "24_2016_rocky_horror.jpeg"
     }
 ]
