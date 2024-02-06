@@ -28,6 +28,10 @@
         "image": "studio_2022_songs_for_a_new_world.jpeg"
     },
     {
+        "title": "Come Alive - Revue 2021",
+        "image": "revue_2021_come_alive_2.jpeg"
+    },
+    {
         "title": "In The Heights - Spring Show 2018",
         "image": "spring_2018_in_the_heights.jpeg"
     },
@@ -42,9 +46,5 @@
     {
         "title": "13! - October Show 2016",
         "image": "october_2016_13.jpeg"
-    },
-    {
-        "title": "Rocky Horror Show - 24 Musical 2016",
-        "image": "24_2016_rocky_horror.jpeg"
     }
 ]
