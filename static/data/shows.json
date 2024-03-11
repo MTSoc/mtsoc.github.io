@@ -1,5 +1,9 @@
 [
     {
+        "title": "Spring Awakening - Spring 2024",
+        "image": "spring_2024_spring_awakening.jpeg"
+    },
+    {
         "title": "Where I Want To Be - Revue 2023",
         "image": "revue_2023_where_i_want_to_be.jpg"
     },
@@ -42,9 +46,5 @@
     {
         "title": "13! - October 2016",
         "image": "october_2016_13.jpeg"
-    },
-    {
-        "title": "The Rocky Horror Show - 24 Musical 2016",
-        "image": "24_2016_rocky_horror.jpeg"
     }
 ]
