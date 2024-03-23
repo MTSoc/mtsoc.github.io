@@ -1,5 +1,9 @@
 [
     {
+        "title": "Big Fish - Studio 2024",
+        "image": "studio_2024_big_fish.jpg"
+    },
+    {
         "title": "Spring Awakening - Spring 2024",
         "image": "spring_2024_spring_awakening.jpeg"
     },
@@ -42,9 +46,5 @@
     {
         "title": "RENT - Spring 2017",
         "image": "spring_2017_rent.jpeg"
-    },
-    {
-        "title": "13! - October 2016",
-        "image": "october_2016_13.jpeg"
     }
 ]
