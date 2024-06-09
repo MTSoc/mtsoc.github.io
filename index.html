@@ -10,8 +10,11 @@
         
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400italic">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-        <link rel="stylesheet" href="static/style.css">
-        <script src="static/script.js"></script>
+        
+        <!-- The purpose of the query '?v=' on style.css and script.js is to force browsers to not use a cached version of the files and to fetch the newest version -->
+        <!-- Increment v every time you want to flush the cache of everyone's browsers (eg. if you make a change to the website which works fine locally but causes strange errors when viewed on dramsoc.org) -->
+        <link rel="stylesheet" href="static/style.css?v=0">
+        <script src="static/script.js?v=0"></script>
 
         <!-- GOOGLE ANALYTICS -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-J4T1FC6CR2"></script>
@@ -70,12 +73,12 @@
         <!-- This section can be used to advertise upcoming shows -->
         <!-- It displays the show's poster and a link to buy tickets -->
         <!-- To change the image, search for #feature in style.css and change the background-image url -->
-        <!-- <div id="feature" class="section">
-            <a id="feature_button" class="large_button" href="/tickets" target="_blank">
+        <div id="feature" class="section">
+            <!-- <a id="feature_button" class="large_button" href="/tickets" target="_blank">
                 <img aria-hidden="true" class="icon" src="static/images/symbols/ticket.png">
                 Tickets
-            </a>
-        </div> -->
+            </a> -->
+        </div>
 
         <!-- ABOUT -->
         <div id="about" class="section plain_section">
