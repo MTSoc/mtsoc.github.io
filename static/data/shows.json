@@ -1,5 +1,9 @@
 [
     {
+        "title": "One Life - October 2024",
+        "image": "october_2024_one_life.jpeg"
+    },
+    {
         "title": "The Final Heist - Camden Fringe 2024",
         "image": "camden_fringe_2024_the_final_heist.jpeg"
     },
@@ -42,9 +46,5 @@
     {
         "title": "Come Alive - Revue 2021",
         "image": "revue_2021_come_alive_2.jpeg"
-    },
-    {
-        "title": "School of Rock! - 24 Musical 2017",
-        "image": "24_2017_school_of_rock.jpeg"
     }
 ]
