@@ -8,7 +8,7 @@ first_script.parentNode.insertBefore(player_script, first_script);
 function onYouTubeIframeAPIReady() {
     console.log('YouTube Iframe API ready')
     youtube = new YT.Player('player', {
-        videoId: 'KoUbSExui7g',
+        videoId: 'rxtisCN5f4s',
         playerVars: {
             controls: 0 // Hide all controls
         },
@@ -37,7 +37,7 @@ function on_player_state_change(state) {
         setTimeout(function() {
             player_logo.style.opacity = 0
             player_cover.style.opacity = 0
-        }, 11_000)
+        }, 2_000)
         break
     case YT.PlayerState.ENDED:
         // Hide player
