@@ -125,7 +125,7 @@ h1, h2, h3, h4, .large_button, .prominent {
 .content_column {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 20px;
 }
 
@@ -137,6 +137,16 @@ h1, h2, h3, h4, .large_button, .prominent {
     width: 20px;
     height: 20px;
     filter: invert();
+}
+@media(prefers-color-scheme: light) {
+    .primary_icon {
+        filter: none;
+    }
+}
+@media(prefers-color-scheme: dark) {
+    .primary_icon {
+        filter: invert();
+    }
 }
 
 /* BUTTONS */
@@ -299,7 +309,7 @@ button, a {
 }
 
 /* SHOWS */
-#past_shows {
+#shows_grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -327,6 +337,7 @@ button, a {
 }
 .show_title {
     margin: 15px 10px;
+    gap: 10px;
 }
 
 /* COMMITTEE */
@@ -335,7 +346,7 @@ button, a {
     height: 250px;
     border-radius: 50%;
 }
-.committee_role {
+.secondary {
     color: var(--secondary);
 }
 

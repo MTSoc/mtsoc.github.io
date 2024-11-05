@@ -17,7 +17,8 @@
     },
     {
         "title": "Where I Want To Be - Revue 2023",
-        "image": "revue_2023_where_i_want_to_be.jpg"
+        "image": "revue_2023_where_i_want_to_be.jpg",
+        "url": "https://www.youtube.com/playlist?list=PLu_WDfQrrNerhoTLVaVxamHTzzNNJZx0G"
     },
     {
         "title": "The Final Heist - October 2023",
@@ -45,6 +46,7 @@
     },
     {
         "title": "Come Alive - Revue 2021",
-        "image": "revue_2021_come_alive_2.jpeg"
+        "image": "revue_2021_come_alive_2.jpeg",
+        "url": "https://www.youtube.com/playlist?list=PLu_WDfQrrNepsKz6kHLx2r9eWtQo3Ua4h"
     }
 ]

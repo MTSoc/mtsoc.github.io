@@ -93,21 +93,36 @@ async function load_shows() {
     var response = await fetch('static/data/shows.json')
     var shows = await response.json()
     
-    for (show of shows) {
-        var show_div = document.createElement('div')
-        show_div.classList.add('show')
+    for (var show of shows) {
+        if (show.url) {
+            show_element = document.createElement('a')
+            show_element.href = show.url
+            show_element.target = '_blank'
+        } else {
+            show_element = document.createElement('div')
+        }
+        show_element.classList.add('show')
+        shows_grid.appendChild(show_element)
 
         var image = document.createElement('img')
         image.classList.add('show_img')
         image.src = 'static/images/shows/' + show.image
-        show_div.appendChild(image)
+        show_element.appendChild(image)
+
+        var row = document.createElement('div')
+        row.classList.add('content_row', 'show_title')
+        show_element.appendChild(row)
+
+        if (show.url) {
+            var image = document.createElement('img')
+            image.src = 'static/images/symbols/youtube.png'
+            image.classList.add('icon', 'primary_icon')
+            row.appendChild(image)
+        }
 
         var title = document.createElement('h4')
-        title.classList.add('show_title')
         title.innerHTML = show.title
-        show_div.appendChild(title)
-
-        past_shows.appendChild(show_div)
+        row.appendChild(title)
     }
 }
 
@@ -119,6 +134,7 @@ async function load_committee() {
     for (member of committee) {
         var member_div = document.createElement('div')
         member_div.classList.add('content_item')
+        committee_grid.appendChild(member_div)
 
         var headshot = document.createElement('img')
         headshot.classList.add('headshot')
@@ -126,6 +142,8 @@ async function load_committee() {
         member_div.appendChild(headshot)
 
         var title_div = document.createElement('div')
+        member_div.appendChild(title_div)
+
         var name = document.createElement('h2')
         name.innerHTML = member.name
         title_div.appendChild(name)
@@ -136,16 +154,13 @@ async function load_committee() {
         title_div.appendChild(pronouns)
 
         var role = document.createElement('p')
-        role.classList.add('committee_role', 'prominent')
+        role.classList.add('secondary', 'prominent')
         role.innerHTML = member.role
         title_div.appendChild(role)
-        member_div.appendChild(title_div)
 
         var bio = document.createElement('p')
         bio.innerHTML = member.bio
         member_div.appendChild(bio)
-
-        committee_grid.appendChild(member_div)
     }
 }
 
