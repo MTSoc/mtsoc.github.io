@@ -13,4 +13,8 @@ def root():
 def policy():
     return render_template('policy.html')
 
+@app.route('/tickets')
+def tickets():
+    return render_template('tickets.html')
+
 app.run(host='0.0.0.0')
