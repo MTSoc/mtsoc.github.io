@@ -11,8 +11,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400italic">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
         
-        <!-- The purpose of the query '?v=' on style.css and script.js is to force browsers to not use a cached version of the files and to fetch the newest version -->
-        <!-- Increment v every time you want to flush the cache of everyone's browsers (eg. if you make a change to the website which works fine locally but causes strange errors when viewed on dramsoc.org) -->
+        <!-- Hash #x used to flush caches -->
         <link rel="stylesheet" href="/static/style.css?v=0">
         <script src="/static/script.js?v=1"></script>
 
@@ -70,8 +69,8 @@
         </div>
 
         <!-- FEATURE -->
-        <!-- This section can be used to advertise upcoming shows -->
-        <!-- It displays the show's poster and a link to buy tickets -->
+        <!-- Section to advertise upcoming shows -->
+        <!-- Just change background-image -->
         <!-- <div id="feature" class="section" style="background-image: url('/static/images/posters/hair.jpg');">
             <a id="feature_button" class="large_button" href="/tickets" target="_blank">
                 <img aria-hidden="true" class="icon" src="/static/images/symbols/ticket.png">
@@ -144,14 +143,18 @@
         <!-- PAST SHOWS -->
         <div class="section_column plain_section">
             <h1>Recent Shows</h1>
-            <div id="shows_grid" class="plain_section"></div>
+            <div id="shows_grid" class="plain_section">
+                <!-- Filled in by /static/script.js -->
+            </div>
         </div>
 
         <!-- COMMITTEE -->
         <div id="committee" class="section plain_section">
             <div class="section_column regular_content">
                 <h1>Committee <span class="secondary">24/25</span></h1>
-                <div id="committee_grid" class="content_grid"></div>
+                <div id="committee_grid" class="content_grid">
+                    <!-- Filled in by /static/script.js -->
+                </div>
             </div>
         </div>
 
