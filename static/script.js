@@ -6,7 +6,7 @@ first_script.parentNode.insertBefore(player_script, first_script);
 
 // Called automatically by the player_api script tag in index.html
 function onYouTubeIframeAPIReady() {
-    console.log('YouTube Iframe API ready')
+    console.log('onYouTubeIframeAPIReady')
     youtube = new YT.Player('player', {
         videoId: 'rxtisCN5f4s',
         playerVars: {
@@ -14,21 +14,22 @@ function onYouTubeIframeAPIReady() {
         },
         events: {
             onReady: on_player_ready,
-            onStateChange: on_player_state_change
+            onStateChange: on_player_state_change,
+            onError: on_player_error
         }
     })
 }
 
 // Called when the player is ready to start
 function on_player_ready() {
-    console.log('YouTube player ready')
+    console.log('on_player_ready')
     youtube.mute()
     youtube.playVideo()
 }
 
 // Called when the player state changes
 function on_player_state_change(state) {
-    console.log('Player state changed to', state.data)
+    console.log('on_player_state_change', state.data)
     switch (state.data) {
     case YT.PlayerState.PLAYING:
         // Show the player
@@ -50,6 +51,11 @@ function on_player_state_change(state) {
         }
         break
     }
+}
+
+// Called when the player encounters an error
+function on_player_error(event) {
+    console.error('on_player_error', event.data)
 }
 
 // Toggle sound on the player
@@ -138,7 +144,7 @@ async function load_committee() {
 
         var headshot = document.createElement('img')
         headshot.classList.add('headshot')
-        headshot.src = 'static/images/committee/24/' + member.image
+        headshot.src = 'static/images/committee/24-25/' + member.image
         member_div.appendChild(headshot)
 
         var title_div = document.createElement('div')

@@ -57,13 +57,13 @@ h1, h2, h3, h4, .large_button, .prominent {
 
 /* BACKGROUND IMAGES */
 #intro {
-    background-image: url(images/shows/revue_2016_wild_wild_party.jpeg);
+    background-image: url(images/shows/16-17/revue_wild_wild_party.jpeg);
 }
 #shows {
-    background-image: url(images/shows/revue_2017_step_into_the_bad_side.jpeg);
+    background-image: url(images/shows/17-18/revue_step_into_the_bad_side.jpeg);
 }
 #contact {
-    background-image: url(images/banners/cast2.jpeg);
+    background-image: url(images/banners/finale.jpeg);
 }
 
 /* CONTENT */
@@ -359,7 +359,7 @@ button, a {
     color: var(--secondary);
 }
 #imperial_logo {
-    height: 40px;
+    height: 20px;
 }
 #union_logo {
     height: 50px;

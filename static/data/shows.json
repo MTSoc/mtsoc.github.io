@@ -1,60 +1,64 @@
 [
     {
+        "title": "Sidekicked - Summer Studio 2025",
+        "image": "24-25/summer_studio_sidekicked.jpeg"
+    },
+    {
         "title": "The Guy Who Didn't Like Musicals (London Premiere) - Studio 2025",
-        "image": "studio_2025_the_guy_who_didnt_like_musicals.jpg"
+        "image": "24-25/spring_studio_the_guy_who_didnt_like_musicals.jpg"
     },
     {
         "title": "Hair - Spring 2025",
-        "image": "spring_2025_hair.jpeg"
+        "image": "24-25/spring_hair.jpeg"
     },
     {
         "title": "Another Day of Sun - Revue 2024",
-        "image": "revue_2024_another_day_of_sun.jpeg"
+        "image": "24-25/revue_another_day_of_sun.jpeg"
     },
     {
         "title": "One Life - October 2024",
-        "image": "october_2024_one_life.jpeg"
+        "image": "24-25/october_one_life.jpeg"
     },
     {
         "title": "The Final Heist - Camden Fringe 2024",
-        "image": "camden_fringe_2024_the_final_heist.jpeg"
+        "image": "23-24/camden_fringe_the_final_heist.jpeg"
     },
     {
         "title": "Big Fish - Studio 2024",
-        "image": "studio_2024_big_fish.jpg"
+        "image": "23-24/studio_big_fish.jpg"
     },
     {
         "title": "Spring Awakening - Spring 2024",
-        "image": "spring_2024_spring_awakening.jpeg"
+        "image": "23-24/spring_spring_awakening.jpeg"
     },
     {
         "title": "Where I Want To Be - Revue 2023",
-        "image": "revue_2023_where_i_want_to_be.jpg",
+        "image": "23-24/revue_where_i_want_to_be.jpg",
         "url": "https://www.youtube.com/playlist?list=PLu_WDfQrrNerhoTLVaVxamHTzzNNJZx0G"
     },
     {
         "title": "The Final Heist - October 2023",
-        "image": "october_2023_the_final_heist.jpg"
+        "image": "23-24/october_the_final_heist.jpg"
     },
     {
         "title": "Gravity Rises - Studio 2023",
-        "image": "studio_2023_gravity_rises.jpg"
+        "image": "22-23/studio_gravity_rises.jpg"
     },
     {
         "title": "Addams Family - Spring 2023",
-        "image": "spring_2023_addams_family.jpeg"
+        "image": "22-23/spring_addams_family.jpeg"
     },
     {
         "title": "Grease - Spring 2022",
-        "image": "spring_2022_grease.jpeg"
+        "image": "21-22/spring_grease.jpeg"
     },
     {
         "title": "Disneyland Paris - Summer 2022",
-        "image": "tour_2022_disneyland.jpeg"
+        "image": "21-22/tour_disneyland.jpeg"
     },
     {
         "title": "Come Alive - Revue 2021",
-        "image": "revue_2021_come_alive_2.jpeg",
+        "image": "21-22/revue_come_alive_2.jpeg",
         "url": "https://www.youtube.com/playlist?list=PLu_WDfQrrNepsKz6kHLx2r9eWtQo3Ua4h"
     }
 ]
