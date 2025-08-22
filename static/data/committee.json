@@ -1,65 +1,65 @@
 [
     {
-        "name": "Naya<br>Miah",
-        "role": "President",
-        "pronouns": "she/her",
-        "image": "naya.jpeg",
-        "bio": "Last year, Naya used a ghostwriter for her committee bio. Now that she's president, she actually has to write her own bio (she's really bad at writing bios). And so, she has no other words other than she's so excited to spread love and spend her final year with her favourite society!"
-    },
-    {
-        "name": "Jasmine<br>Ajaz",
-        "role": "Vice president",
-        "pronouns": "she/her",
-        "image": "jaz.jpeg",
-        "bio": "In the last year of her Physics degree, Jaz is thrilled to have made 'resident oldie' status on this, her most favourite of committees. She dedicates this bio to all the resident oldies that came before her, and all those yet to come."
-    },
-    {
-        "name": "Giulio<br>Bassanino",
-        "role": "Treasurer",
-        "pronouns": "he/him",
-        "image": "giulio.jpeg",
-        "bio": "Giulio spent his first year spending what little time inside and out of his JMC degree dedicated to overcommitting to MTSoc. While struggling to balance his degree and societies, he realised he could better spend the next year struggling to balance his degree, societies and MTSoc's finances. He hopes he can help others find the belonging and warmth he did in the society by not crashing it into crushing debt."
+        "name": "Averen<br>Turay",
+        "role": "Co-President",
+        "pronouns": "he/they",
+        "image": "averen2.JPG",
+        "bio": "Averen is simply buzzing for another year with MT. After spending his 2nd year as co-social secretary, Averen cannot wait for his next year in co-presidency (he just cannot seem to do a role by himself). Look out for every single one of his fleeces; he’s basically married to them all. He also loves materials."
     },
     {
         "name": "Jay<br>Etim",
-        "role": "Secretary",
+        "role": "Co-President",
         "pronouns": "she/they",
-        "image": "jay.jpeg",
-        "bio": "Jay is a second year ChemEng student who's excited to neglect their degree for MTSoc once again! Expect to see her with boxes of baked goods, huddled over her laptop, formulating the most unnecessarily, blindingly colourful spreadsheet you will ever lay your eyes upon (and yes, you can have a cookie <3)"
-    },
-    {
-        "name": "Dana<br>Whigan",
-        "role": "Publicity Officer",
-        "pronouns": "she/they",
-        "image": "dana.jpeg",
-        "bio": "Dana is absolutely buzzing to finally be on committee! What better way to finish their biomed degree than to carefully craft MTSoc's posts and stories and captions, just like they do on their own account. They even curated this bio a month in advance. That's how much they love their job."
-    },
-    {
-        "name": "Jack<br>Finnis",
-        "role": "Webmaster",
-        "pronouns": "he/him",
-        "image": "jack.jpeg",
-        "bio": "Jack is a 3rd year Computer Science undergraduate. He has found the perfect way to spend more time with MTSoc while also learning for his course: MTSoc Webmaster! He is super excited for a final year of musicals, cabarets and costumes."
-    },
-    {
-        "name": "Averen<br>Turay",
-        "role": "Social secretary",
-        "pronouns": "he/they",
-        "image": "averen.jpeg",
-        "bio": "Averen is thrilled to be providing some much needed materials rep in MT. Entering his 2nd year, he cannot wait to blow your individual socks off with the socials planned. Trust, there will be explosions (if the union reads this, I'm joking). Be there or be square. 😎"
+        "image": "jay2.jpeg",
+        "bio": "Jay is excited to go into her third year and neglect her degree for MTSoc once again. She promises the baked goods won’t stop just because she’s co-president now <3"
     },
     {
         "name": "Stephanie<br>Hamilton-Brown",
-        "role": "Social secretary",
+        "role": "Treasurer",
         "pronouns": "she/they",
-        "image": "steph.jpeg",
-        "bio": "Stephanie is a 3rd year medical bioscience student and is super excited to be social sec this year! Now that she's on committee she gets to spend even more time with her favourite people and even less time on her degree (whoops!)"
+        "image": "steph2.JPG",
+        "bio": "Having been in MT since her first year, Stephanie is so grateful for the welcoming community she's grown with throughout her university experience. Now in her fourth year, she's excited to keep growing, making memories, and pushing herself creatively!"
     },
     {
-        "name": "Jasmine<br>Fung",
+        "name": "Alvin<br>Chung",
+        "role": "Secretary",
+        "pronouns": "he/him",
+        "image": "alvin.JPG",
+        "bio": "Currently majoring in Geophysics and minorly in triple-booking his calendar, Alvin is more than delighted to be on committee. You’ll usually find him glued to his laptop, buried in spreadsheets, docs, emails (and yes, plenty of GIFs)."
+    },
+    {
+        "name": "Tim<br>Spawforth",
+        "role": "Publicity Officer",
+        "pronouns": "he/him",
+        "image": "tim.jpg",
+        "bio": "Did Tim forget he had a degree this year? Perhaps. He's already thrown himself headfirst into MT and Dram and term hasn't even started yet. He's excited to see what the year has in store: new songs, new proposals and most importantly new people to meet. Please say hi if you see him around!"
+    },
+    {
+        "name": "Charlie<br>Barklam",
+        "role": "Webmaster",
+        "pronouns": "he/him",
+        "image": "charlie.jpg",
+        "bio": "As we all know, musical theatre and web design goes hand in hand, so this year Charlie is going to be fixated on maximising the synergy between them... He's a second year who thoroughly enjoyed every aspect of MT last year, and can't wait to see what this year has in store!"
+    },
+    {
+        "name": "Ananjan<br>Pillai",
+        "role": "Social secretary",
+        "pronouns": "he/him",
+        "image": "ananjan.jpg",
+        "bio": "Ananjan (your overwhelmed but enthusiastic Social Sec) cannot wait to 'take you skydiving' (for union members reading: it's karaoke with safety goggles and a fast-spinning-fan). No clue why there is a treble clef in his Aerodynamics notes, but he IS sure that this year will be full of chaotic fun!!!"
+    },
+    {
+        "name": "Iris<br>Wang",
+        "role": "Social secretary",
+        "pronouns": "she/they",
+        "image": "iris.jpg",
+        "bio": "Iris likes to get her grubby little hands on a bit of everything MT. Iris can’t wait to take a break from licking rocks to meet all the new mtsoc freshers and organise fun socials for everyone :)"
+    },
+    {
+        "name": "Frances<br>Jin",
         "role": "Equipment Manager",
         "pronouns": "she/her",
-        "image": "jasmine.jpeg",
-        "bio": "Jasmine is very excited to be on committee again with the same role this year! She loves being with MTSoc and looks forward to welcoming all the freshers!"
+        "image": "frances.jpeg",
+        "bio": "Frances absolutely cannot wait to be on the committee this year. Musicals are her endless source of joy and inspiration, and her Apple Music playlist is always overtaken by musical albums. She is ready to share the magic of theatre with whoever wants to take part in this society. It’s doubt that this is going to be an extraordinary year in her life."
     }
 ]
