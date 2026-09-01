@@ -1,72 +1,58 @@
 [
     {
-        "name": "Averen<br>Turay",
-        "role": "Co-President",
-        "pronouns": "he/they",
-        "image": "averen2.JPG",
-        "bio": "Averen is simply buzzing for another year with MT. After spending his 2nd year as co-social secretary, Averen cannot wait for his next year in co-presidency (he just cannot seem to do a role by himself). Look out for every single one of his fleeces; he’s basically married to them all. He also loves materials."
-    },
-    {
         "name": "Jay<br>Etim",
-        "role": "Co-President",
+        "role": "President",
         "pronouns": "she/they",
-        "image": "jay2.jpeg",
-        "bio": "Jay is excited to go into her third year and neglect her degree for MTSoc once again. She promises the baked goods won’t stop just because she’s co-president now <3"
+        "image": "jay.jpg",
+        "bio": "Jay somehow found her way back to MT Committee for the third year in a row. She’s incredibly excited to spend more time with the society than on her degree yet again <3"
     },
     {
-        "name": "Stephanie<br>Hamilton-Brown",
+        "name": "Keng<br>How",
         "role": "Treasurer",
-        "pronouns": "she/they",
-        "image": "steph2.JPG",
-        "bio": "Having been in MT since her first year, Stephanie is so grateful for the welcoming community she's grown with throughout her university experience. Now in her fourth year, she's excited to keep growing, making memories, and pushing herself creatively!"
-    },
-    {
-        "name": "Alvin<br>Chung",
-        "role": "Secretary",
         "pronouns": "he/him",
-        "image": "alvin.JPG",
-        "bio": "Currently majoring in Geophysics and minorly in triple-booking his calendar, Alvin is more than delighted to be on committee. You’ll usually find him glued to his laptop, buried in spreadsheets, docs, emails (and yes, plenty of GIFs)."
+        "image": "keng.jpg",
+        "bio": "Keng spent part of his summer looking at financial statements and accounting reports, naturally therefore it only makes sense for him to spend the rest of the year looking at glorified excel spreadsheets. He is looking forward to his final year in the society whether on stage, part of a directing team or on committee (he seems to be \"just always there\")."
     },
     {
-        "name": "Tim<br>Spawforth",
+        "name": "Aoife<br>O'Kane",
+        "role": "Secretary",
+        "pronouns": "she/her",
+        "image": "aoife.jpg",
+        "bio": "Having only tried musical theatre for the first time in her second year, Aoife isn’t quite sure how she ended up here… but she’s thrilled to be here anyways! She’s super excited to reconnect with old friends and meet new friends!!! (and force everyone to read her brainrot emails ofc <333)"
+    },
+    {
+        "name": "Henry<br>Shen",
         "role": "Publicity Officer",
         "pronouns": "he/him",
-        "image": "tim.jpg",
-        "bio": "Did Tim forget he had a degree this year? Perhaps. He's already thrown himself headfirst into MT and Dram and term hasn't even started yet. He's excited to see what the year has in store: new songs, new proposals and most importantly new people to meet. Please say hi if you see him around!"
+        "image": "henry.jpg",
+        "bio": "It's always too late for Henry to realise that he has signed up for an excessive amount of stuffs. As for MTSoc, that's when he's designing all of these committee intro posts."
     },
     {
-        "name": "Charlie<br>Barklam",
+        "name": "Bryan<br>Chan",
         "role": "Webmaster",
         "pronouns": "he/him",
-        "image": "charlie.jpg",
-        "bio": "As we all know, musical theatre and web design goes hand in hand, so this year Charlie is going to be fixated on maximising the synergy between them... He's a second year who thoroughly enjoyed every aspect of MT last year, and can't wait to see what this year has in store!"
+        "image": "bryan.jpg",
+        "bio": "Bryan has had ENOUGH of Huxley and is ecstatic to have MTSoc as a form of escapism… He can’t wait to get back onto the Union stage and ridicule himself in front of all his peers again!"
     },
     {
-        "name": "Tianna<br>Ubesio",
-        "role": "Social secretary",
-        "pronouns": "she/her",
-        "image": "tianna.jpg",
-        "bio": "Tianna is super excited to (finally!!) be able to join committee for the rest of the year!! She’s thrilled to be able to help the society she loves so much and can’t wait to make new memories with everyone <33"
-    },
-    {
-        "name": "Iris<br>Wang",
-        "role": "Social secretary",
-        "pronouns": "she/they",
-        "image": "iris.jpg",
-        "bio": "Iris likes to get her grubby little hands on a bit of everything MT. Iris can’t wait to take a break from licking rocks to meet all the new mtsoc freshers and organise fun socials for everyone :)"
+        "name": "Atom<br>Lucenet",
+        "role": "Social Secretary",
+        "pronouns": "he/him",
+        "image": "atom.jpg",
+        "bio": "Atom tried getting into committee three weeks into his first term at Imperial - take that as a lesson that it’s never too early to get involved in societies! He is unbelievably excited to see new and old faces at socials and is unbelievably stressed about having to plan said socials 😊😬"
     },
     {
         "name": "Nathalie<br>Tedfors Lindell",
         "role": "Production Manager",
         "pronouns": "she/her",
-        "image": "nathalie.jpg",
-        "bio": "This is Nathalie's 6th (?) year with MTSoc and she's ECSTATIC to have found an excuse to get back on committee and help her favourite society and people thrive."
+        "image": "nathalie.JPG",
+        "bio": "Nathalie joined MTSoc in 2020 and has kept doing more degrees in order to stay for as long as possible. However, she has finally reached the end of this scheme, and is excited for one last year with the best society ever <3"
     },
     {
         "name": "Frances<br>Jin",
         "role": "Equipment Manager",
         "pronouns": "she/her",
-        "image": "frances.jpeg",
-        "bio": "Frances absolutely cannot wait to be on the committee this year. Musicals are her endless source of joy and inspiration, and her Apple Music playlist is always overtaken by musical albums. She is ready to share the magic of theatre with whoever wants to take part in this society. It’s doubt that this is going to be an extraordinary year in her life."
+        "image": "frances.jpg",
+        "bio": "Frances doesn’t have the luxury of time to commit to a good bio. Just DM her if you care to learn more about the person."
     }
 ]
